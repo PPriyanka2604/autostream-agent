@@ -1,11 +1,11 @@
-AutoStream – Social-to-Lead Agentic Workflow
+## AutoStream – Social-to-Lead Agentic Workflow
 
 This repository contains a conversational AI agent built as part of the Machine Learning Intern assignment for ServiceHive (Inflx).
 
 The agent represents a fictional SaaS product called AutoStream, which provides automated video editing tools for content creators.
 Its purpose is to convert conversations into qualified business leads using intent detection, retrieval-augmented generation (RAG), and controlled tool execution.
 
-🚀 Key Features
+## 🚀 Key Features
 
 Intent detection (greeting, product/pricing inquiry, high-intent lead)
 
@@ -17,7 +17,7 @@ Safe and controlled lead-capture tool execution
 
 FastAPI backend with a professional web-based chat UI
 
-🧠 Knowledge Base
+## 🧠 Knowledge Base
 
 The agent retrieves information from a local knowledge base containing:
 
@@ -45,7 +45,7 @@ No refunds after 7 days
 
 The knowledge base is stored locally and accessed through a FAISS vector store.
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Language: Python 3.9+
 
@@ -61,7 +61,7 @@ Vector Store: FAISS
 
 State Management: LangGraph state
 
-📁 Project Structure
+## 📁 Project Structure
 ```
 autostream-agent/
 ├── backend/
@@ -117,7 +117,7 @@ uvicorn backend.app:app
 
 Open frontend/index.html in your browser.
 
-🧩 Architecture Explanation
+## 🧩 Architecture Explanation
 
 This project uses LangGraph to implement a structured, agentic conversational workflow rather than a simple chatbot. LangGraph was chosen because it enables explicit control over conversation flow, state transitions, and tool execution — all of which are essential for real-world lead-generation systems.
 
@@ -127,7 +127,7 @@ When high intent is detected, the agent transitions into a lead qualification wo
 
 This design ensures safe tool usage, clean state management, and a scalable architecture suitable for production environments.
 
-📲 WhatsApp Deployment 
+## 📲 WhatsApp Deployment 
 
 To deploy this agent on WhatsApp, the FastAPI backend can be integrated with the WhatsApp Business API using webhooks. Incoming WhatsApp messages would be forwarded to the /chat endpoint, and the agent’s responses would be sent back via the WhatsApp API. LangGraph state can be stored per user session (using the phone number as a unique identifier) to preserve conversation continuity across messages.
 ```
