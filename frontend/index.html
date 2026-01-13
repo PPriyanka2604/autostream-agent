@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AutoStream Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo">▶ AutoStream</div>
+    <nav>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <div class="avatars">
+        <img src="https://i.pravatar.cc/30?img=1" />
+        <img src="https://i.pravatar.cc/30?img=2" />
+        <img src="https://i.pravatar.cc/30?img=3" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="container">
+
+    <!-- Left Hero Section -->
+    <section class="hero">
+      <h1>Welcome to AutoStream!</h1>
+      <p>Let’s get you set up with our Pro plan.</p>
+
+      <div class="rocket">🚀</div>
+
+      <h2>Automated video editing for creators</h2>
+      <p class="subtext">
+        Turn raw clips into professional videos using AI-powered workflows.
+      </p>
+    </section>
+
+    <!-- Chat Assistant -->
+    <section class="chat-box">
+      <div class="chat-header">
+        ▶ AutoStream Assistant
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot">
+          
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type your message..."
+          autocomplete="off"
+        />
+        <button id="sendBtn">➤</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
