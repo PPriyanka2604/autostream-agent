@@ -46,7 +46,7 @@ No refunds after 7 days
 The knowledge base is stored locally and accessed through a FAISS vector store.
 
 ## 🛠 Tech Stack
-
+```
 Language: Python 3.9+
 
 Framework: LangChain + LangGraph
@@ -60,7 +60,7 @@ Frontend: HTML, CSS, JavaScript
 Vector Store: FAISS
 
 State Management: LangGraph state
-
+```
 ## 📁 Project Structure
 ```
 autostream-agent/
@@ -146,7 +146,7 @@ Successful mock lead capture tool execution
 🔗 Demo Video:
 https://drive.google.com/file/d/19uBrul0jP-UzxxBkQJ4eC2aVMCBJXx_Z/view?usp=sharing
 ```
-✅ Summary
+## ✅ Summary
 
 This project demonstrates a real-world Social-to-Lead AI agent with:
 
